@@ -28,6 +28,5 @@ public class CompoundInterest {
         System.out.printf("Amount after %d years is ₹%.2f", years,amount);
 
         input.close();
-
     }
 }
