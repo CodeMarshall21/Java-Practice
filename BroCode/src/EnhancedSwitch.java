@@ -4,7 +4,7 @@ public class EnhancedSwitch {
     public static void main(String[] args) {
         // Enhanced switch = A replacement to many else if statements
         //                                   (Java14 feature)
-        
+
         Scanner input = new Scanner(System.in);
 
         String day;
@@ -18,5 +18,6 @@ public class EnhancedSwitch {
             default -> System.out.printf("%s is not a day", day);
         }
 
+        input.close();
     }
 }
