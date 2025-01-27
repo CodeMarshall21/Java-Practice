@@ -20,7 +20,7 @@ public class GuessingGame {
         System.out.printf("ATLAST !! random number is %d your number is %d",number,val);
 
 
-
+        input.close();
 
     }
 }
