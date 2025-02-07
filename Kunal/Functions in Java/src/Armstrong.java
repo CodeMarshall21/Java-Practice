@@ -6,11 +6,38 @@ public class Armstrong {
 
         int number;
 
+        int choice;
 
-        System.out.print("Number : ");
-        number = in.nextInt();
+        System.out.println("1 -> custom single number");
+        System.out.println("2 -> custom range");
+        System.out.print("Choice : ");
+        choice = in.nextInt();
 
-        System.out.println(armCheck(number));
+        switch (choice){
+            case 1 -> {
+                System.out.print("Number : ");
+                number = in.nextInt();
+                System.out.println(armCheck(number));
+            }
+            case 2 -> {
+                System.out.print("From : ");
+                int from = in.nextInt();
+                System.out.print("To : ");
+                int to = in.nextInt();
+                System.out.printf("Armstrong numbers from %d to %d : ",from,to);
+                for (int i = from ; i <= to ; i++){
+                    if (armCheck(i)){
+                        System.out.printf("%d ",i);
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
     }
     static boolean armCheck(int num){
         int lastDigit;
