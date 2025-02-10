@@ -13,15 +13,7 @@ public class StackCreation {
         stack.push("Item 4");
         System.out.println("stack.empty() => " + stack.empty());
         System.out.println("stack => "+stack);
-        String item = stack.pop();
 
-        System.out.println("stack.pop() => "+stack);
-        System.out.println("poped item : "+item);
-        System.out.println("Top item without poping : stack.peek() => "+stack.peek());
-        System.out.println("stack => "+stack);
-
-        System.out.println("stack.search('Item 3') => "+stack.search("Item 3"));
-        System.out.println("stack.search('Item 4') => "+stack.search("Item 4")+" <= NOT FOUND");
 
     }
 }
