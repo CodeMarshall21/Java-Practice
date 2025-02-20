@@ -1,3 +1,5 @@
+package com.A1_Basics;
+
 import java.util.Scanner;
 public class Madlibs {
     public static void main(String[] args) {

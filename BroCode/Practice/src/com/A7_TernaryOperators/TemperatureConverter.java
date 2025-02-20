@@ -1,3 +1,5 @@
+package com.A7_TernaryOperators;
+
 import java.io.PrintStream;
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package com.A3_RandomNumbers;
+
 import java.util.Random;
 
 public class RandomNumber {

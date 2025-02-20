@@ -1,3 +1,5 @@
+package com.A5_Printf;
+
 public class WorkingPrintf {
     public static void main(String[] args) {
         // printf() is a method used to format output

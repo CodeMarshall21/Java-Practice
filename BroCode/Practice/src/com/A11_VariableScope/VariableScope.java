@@ -1,3 +1,5 @@
+package com.A11_VariableScope;
+
 public class VariableScope {
     static int x = 3; //CLASS
 

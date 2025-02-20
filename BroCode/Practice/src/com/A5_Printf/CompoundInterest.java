@@ -1,3 +1,5 @@
+package com.A5_Printf;
+
 import java.util.Scanner;
 
 public class CompoundInterest {

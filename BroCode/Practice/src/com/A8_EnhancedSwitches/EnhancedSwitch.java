@@ -1,3 +1,5 @@
+package com.A8_EnhancedSwitches;
+
 import java.util.Scanner;
 
 public class EnhancedSwitch {

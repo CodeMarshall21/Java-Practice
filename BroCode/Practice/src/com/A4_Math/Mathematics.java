@@ -1,3 +1,5 @@
+package com.A4_Math;
+
 import java.util.Scanner;
 
 public class Mathematics {

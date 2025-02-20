@@ -1,3 +1,5 @@
+package com.A10_Methods;
+
 import java.util.Random;
 public class Methods {
     public static void main(String[] args){

@@ -1,3 +1,5 @@
+package com.A3_Conditionals;
+
 public class Ifstatements {
     public static void main(String[] args) {
 //        boolean truth = false;

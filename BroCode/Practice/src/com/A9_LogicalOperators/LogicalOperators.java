@@ -1,3 +1,5 @@
+package com.A9_LogicalOperators;
+
 import java.util.Scanner;
 
 public class LogicalOperators {

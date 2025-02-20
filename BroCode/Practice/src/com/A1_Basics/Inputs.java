@@ -1,3 +1,5 @@
+package com.A1_Basics;
+
 import java.util.Scanner;
 
 

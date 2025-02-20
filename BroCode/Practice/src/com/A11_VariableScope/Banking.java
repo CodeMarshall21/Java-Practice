@@ -1,3 +1,5 @@
+package com.A11_VariableScope;
+
 import java.util.Scanner;
 public class Banking {
     static Scanner input = new Scanner(System.in);

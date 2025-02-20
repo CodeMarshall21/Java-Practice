@@ -1,3 +1,5 @@
+package com.A3_Conditionals;
+
 import java.util.Scanner;
 
 public class MultipleIfStatements {

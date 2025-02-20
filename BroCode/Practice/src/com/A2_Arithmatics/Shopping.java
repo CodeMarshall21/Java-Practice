@@ -1,3 +1,5 @@
+package com.A2_Arithmatics;
+
 import java.util.Scanner;
 
 public class Shopping {

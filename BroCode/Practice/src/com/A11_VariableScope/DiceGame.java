@@ -1,3 +1,5 @@
+package com.A11_VariableScope;
+
 import java.util.Scanner;
 import java.util.Random;
 

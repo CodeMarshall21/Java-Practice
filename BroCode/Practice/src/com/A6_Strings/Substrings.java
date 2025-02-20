@@ -1,3 +1,5 @@
+package com.A6_Strings;
+
 import java.util.Scanner;
 
 public class Substrings {

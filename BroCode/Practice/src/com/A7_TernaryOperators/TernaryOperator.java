@@ -1,3 +1,5 @@
+package com.A7_TernaryOperators;
+
 public class TernaryOperator {
     public static void main(String[] args) {
         // ternary operator ? = Return 1 of 2 values if a condition is true
