@@ -16,5 +16,5 @@ public class VariableScope {
         System.out.println(x);
     }
 
-    
+
 }
