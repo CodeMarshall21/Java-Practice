@@ -17,15 +17,21 @@ public class ArrayUserInput {
                 "            foods[i] = in.nextLine();\n" +
                 "        }" +
                 "" +
-                "\nGives out ArrayIndexOutOfBound Error so declare the array size first");
-        String[] array = new String[5];
+                "\nGives out ArrayIndexOutOfBound Error so declare the foods size first");
+        String[] foods;
+        System.out.print("Array Length: ");
+        int size  = in.nextInt();
+        in.nextLine();
 
-        for (int i = 0; i < array.length; i++) {
+        foods = new String[size];
+
+
+        for (int i = 0; i < foods.length; i++) {
             System.out.printf("Enter food %d: ",i);
-            array[i] = in.nextLine();
+            foods[i] = in.nextLine();
         }
 
-        for (String food : array){
+        for (String food : foods){
             System.out.print(food+" ");
         }
 
