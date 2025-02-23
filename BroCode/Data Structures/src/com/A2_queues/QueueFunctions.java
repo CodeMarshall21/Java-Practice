@@ -1,4 +1,4 @@
-package com.queues;
+package com.A2_queues;
 
 import java.util.LinkedList;
 import java.util.Queue;

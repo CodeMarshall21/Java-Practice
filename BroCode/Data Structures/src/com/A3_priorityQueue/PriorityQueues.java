@@ -1,4 +1,4 @@
-package com.priorityQueue;
+package com.A3_priorityQueue;
 import java.util.Collections;
 import java.util.Queue;
 import java.util.PriorityQueue;

@@ -1,4 +1,4 @@
-package com.linkedLists;
+package com.A4_linkedLists;
 
 import java.util.LinkedList;
 
