@@ -6,7 +6,7 @@ public class VarArgs {
         mulArgs(15,32,"Hello","World","Hi","There");
     }
     static void multiple(int ...v){
-        System.out.printf("%d\n",Arrays.toString(v));
+        System.out.printf("%s\n",Arrays.toString(v));
     }
 
     static void mulArgs(int a, int b, String ...v){
