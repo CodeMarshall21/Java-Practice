@@ -55,7 +55,7 @@ public class VarArgs {
 
         return sum / arr.length;
 
-        
+
     }
 }
 
