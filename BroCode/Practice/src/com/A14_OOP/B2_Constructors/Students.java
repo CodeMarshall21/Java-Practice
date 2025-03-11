@@ -1,4 +1,4 @@
-package com.A14_OOP.Constructors;
+package com.A14_OOP.B2_Constructors;
 
 public class Students {
     String name;

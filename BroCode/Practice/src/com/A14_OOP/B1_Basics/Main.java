@@ -1,4 +1,4 @@
-package com.A14_OOP.Basics;
+package com.A14_OOP.B1_Basics;
 
 public class Main {
     public static void main(String[] args) {
