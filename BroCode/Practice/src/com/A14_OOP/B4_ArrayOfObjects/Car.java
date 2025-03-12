@@ -10,6 +10,6 @@ public class Car {
     }
 
     void drive(){
-        System.out.printf("Your drive %s %s\n",this.color,this.model);
+        System.out.printf("Your drive %s %s\n   ",this.color,this.model);
     }
 }
