@@ -7,7 +7,7 @@ public class Main {
         // super = Refers to the parent class
         //               Used in constructors and method overriding
         //               Calls the parent constructor to initialize attributes
-        
+
         Person guy = new Person("Tom","Riddle");
         Student highSchooler = new Student("Harry","Potter",6.9);
         Employee manager = new Employee("Rubus","Hagrid",69000);
