@@ -27,7 +27,7 @@ public class Main {
 
 
                 Circle circle = new Circle(radius);
-                circle.isShape();
+                circle.display(); circle.isShape();
                 System.out.printf("Area : %.2f",circle.area());
 
             }
@@ -39,7 +39,7 @@ public class Main {
 
 
                 Triangle triangle = new Triangle(base,height);
-                triangle.isShape();
+                triangle.display(); triangle.isShape();
                 System.out.printf("Area : %.2f",triangle.area());
             }
             case 3 -> {
@@ -50,7 +50,7 @@ public class Main {
 
 
                 Rectangle rectangle = new Rectangle(length,breadth);
-                rectangle.isShape();
+                rectangle.display(); rectangle.isShape();
                 System.out.printf("Area : %.2f",rectangle.area());
             }
         }
