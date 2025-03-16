@@ -8,6 +8,12 @@ public class Triangle extends Shape{
     Triangle(double height, double base){
         this.height = height;
         this.base = base;
+        this.isShape = true;
+    }
+
+    void isShape(){
+
+        System.out.println(isShape);
     }
 
     @Override

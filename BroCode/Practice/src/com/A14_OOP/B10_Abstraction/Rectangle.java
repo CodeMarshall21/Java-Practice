@@ -9,7 +9,13 @@ public class Rectangle extends Shape{
 
         this.length = length;
         this.breadth = breadth;
+        this.isShape = true;
 
+    }
+
+    void isShape(){
+
+        System.out.println(isShape);
     }
 
     @Override

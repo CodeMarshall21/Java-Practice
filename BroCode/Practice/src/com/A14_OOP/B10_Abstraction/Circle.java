@@ -6,6 +6,11 @@ public class Circle extends Shape{
 
     Circle(double radius){
         this.radius = radius;
+        this.isShape = true;
+    }
+
+    void isShape(){
+        System.out.println(isShape);
     }
 
     @Override
