@@ -6,6 +6,15 @@ public class Main {
         //                     that implementing classes MUST define.
         //                     Supports multiple inheritance-like behavior.
 
-        
+        Rabbit rabbit = new Rabbit();
+        Fish fish = new Fish();
+        Hawk hawk = new Hawk();
+
+        rabbit.flee();
+        fish.flee();
+        fish.hunt();
+        hawk.hunt();
+
+
     }
 }
