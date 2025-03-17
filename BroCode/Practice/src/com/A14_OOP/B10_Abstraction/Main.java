@@ -15,6 +15,8 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int ch;
 
+//        Shape shape = new Shape();        <- Error: 'Shape' is abstract; cannot be instantiated
+
         System.out.println("******** Menu ********");
         System.out.println("1.Circle\n2.Triangle\n3.Rectangle");
         System.out.print("Choice: ");
