@@ -6,6 +6,9 @@ public class Main {
         //                            For example, an Engine is "part of" a Car.
         //                            Allows complex objects to be constructed from smaller objects.
 
-        
+        Car car = new Car("Corvette",2003,"V8");
+
+        System.out.println(car);
+        car.start();
     }
 }
