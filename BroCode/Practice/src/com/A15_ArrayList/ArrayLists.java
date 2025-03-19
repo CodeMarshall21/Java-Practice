@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class ArrayLists {
     public static void main(String[] args) {
+        // ArrayList = A resizeable array that stores objects (autoboxing)
+        //                     Arrays are fixed in size, but ArrayLists can change
         Scanner in = new Scanner (System.in);
         ArrayList<String> foods = new ArrayList<>();
         int count;
