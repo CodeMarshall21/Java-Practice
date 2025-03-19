@@ -41,10 +41,11 @@ public class Main {
         //String to a primitive datatype -> Parse
         int a2 = Integer.parseInt("123");
         double b2 = Double.parseDouble("123.123");
-        char c2 = "Pizza".charAt(0); //<- Character class has no parse method
+        char c2 = "Pizza".charAt(0); // <- Character class has no parse method
         boolean d2 = Boolean.parseBoolean("true");
+//        System.out.println(a2+b2+c2+d2); // <- Operator '+' cannot be applied to 'double', 'boolean'
 
-        
+
 
 
 
