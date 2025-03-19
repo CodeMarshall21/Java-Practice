@@ -24,7 +24,7 @@ public class Exceptions {
             val = in.nextInt();
         }catch(InputMismatchException e){ // <- import java.util.InputMismatchException;
             System.out.println(e + " <-> Enter INTEGER NUMBER ONLY !!!");
-        } catch (Exception e) { //its better to catch the specific Exception first then the common exception
+        } catch (Exception e) { //it's better to catch the specific Exception first then the common exception
             System.out.println("SOMETHING WENT WRONG !!!");
         }
         finally {
