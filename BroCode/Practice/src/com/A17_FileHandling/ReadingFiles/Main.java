@@ -8,5 +8,8 @@ public class Main {
     // FileInputStream: Best for binary files (e.g., images, audio files)
     // RandomAccessFile: Best for read/write specific portions of a large file
 
-    
+    String path = "D:\\Work\\Java Practise\\BroCode\\Practice\\src\\com\\A17_FileHandling\\WritingFiles\\text.txt";
+
+
+
 }
