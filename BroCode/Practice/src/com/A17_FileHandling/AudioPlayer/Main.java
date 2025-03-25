@@ -19,15 +19,30 @@ public class Main {
 
         try(Scanner in = new Scanner(System.in);
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
+
 //        AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)
 //        AudioSystem.getAudioInputStream(File file)
-//
 //              - Reads an audio file (like .wav, .au, .aif formats) and returns an AudioInputStream object.
 //              - audioStream holds the audio data from the file, which can be used to manipulate or play the audio.
 
+//          file → Represents the path to the audio file (sound.wav).
+//          audioStream → Stores the audio data for playback.
+
+
+//        Clip clip = AudioSystem.getClip()
+//        AudioSystem.getClip()
+//              - Creates a Clip object that can be used to play audio.
+//              - A Clip is a pre-loaded audio data container that can play, stop, and loop audio.
 
             Clip clip = AudioSystem.getClip();
                 clip.open(audioStream);
+
+//          clip → Holds the audio data that will be played.
+
+//          clip.open(audioStream)
+//          clip.open(AudioInputStream)
+//              - Loads the audio data from audioStream into the clip.
+//              - The clip is now ready to play the loaded audio.
 
 
                 char input = '\0';
