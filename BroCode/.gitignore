@@ -22,7 +22,7 @@ bin/
 /nbdist/
 /.nb-gradle/
 
-**/src/com/A17_FileHandling/AudioPlayer/Fortunate Son.wav
+#**/src/com/A17_FileHandling/AudioPlayer/Fortunate Son.wav
 
 ### VS Code ###
 .vscode/
