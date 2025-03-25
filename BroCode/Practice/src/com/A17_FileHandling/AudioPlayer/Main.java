@@ -16,6 +16,14 @@ public class Main {
 
         File file = new File(path);
 
+
+//        AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)
+//        AudioSystem.getAudioInputStream(File file)
+//
+//              - Reads an audio file (like .wav, .au, .aif formats) and returns an AudioInputStream object.
+//              - audioStream holds the audio data from the file, which can be used to manipulate or play the audio.
+
+
         try(Scanner in = new Scanner(System.in);
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
 
