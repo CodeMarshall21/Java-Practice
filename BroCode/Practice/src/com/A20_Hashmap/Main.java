@@ -1,4 +1,4 @@
-package com.A19_Hashmap;
+package com.A20_Hashmap;
 
 public class Main {
     public static void main(String[] args) {
