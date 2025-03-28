@@ -8,7 +8,7 @@ public class Main {
         //                     that is compatible with different data types.
         //                     <T, U> type parameter (placeholder that gets replaced with a real type)
         //                     type argument (specifies the type)
-        
+
 
         Product<String, Integer> product1 = new Product<>();
         Product<String, Double> product2 = new Product<>();
