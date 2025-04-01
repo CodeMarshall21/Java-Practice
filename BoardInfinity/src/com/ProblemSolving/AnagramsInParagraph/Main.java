@@ -1,9 +1,9 @@
-package com.StringManipulation;
+package com.ProblemSolving.AnagramsInParagraph;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class AnagramInParagraph {
+public class Main {
     public static void main(String[] args) {
         String paragraph;
         Scanner in = new Scanner(System.in);

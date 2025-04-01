@@ -1,9 +1,9 @@
-package com.StringManipulation;
+package com.ProblemSolving.Anagram;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Anagrams {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String word1;

@@ -1,6 +1,6 @@
-package com.StringManipulation;
+package com.ProblemSolving.HashAndStar;
 
-public class HashAndStar {
+public class Main {
     public static void main(String[] args) {
 
         // print if (max(starCount,hashCount) < 3) -> "+" * max(starCount,hashCount) + "*" * max(starCount,hashCount)

@@ -1,8 +1,6 @@
-package com.StringManipulation;
+package com.ProblemSolving.LongestPalindrome;
 
-import java.util.Arrays;
-
-public class LongestPalindrome {
+public class Main {
     public static void main(String[] args) {
         String str = "bababababd";
         String LongestStr = "";

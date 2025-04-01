@@ -1,8 +1,8 @@
-package com.StringManipulation;
+package com.ProblemSolving.VowelCheck;
 
 import java.util.Scanner;
 
-public class VowelCheck {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
