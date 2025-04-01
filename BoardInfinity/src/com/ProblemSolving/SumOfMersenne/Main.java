@@ -40,18 +40,13 @@ public class Main {
 //        }
 //        return false;
         int i = 1;
-        boolean flag = false;
-        while(true){
-            if ((Math.pow(2,i)) - val == 1){
-                flag =  true;
-                break;
-            }
-            if ((Math.pow(2,i)) > val){
-                break;
+        while(val >= (1 << i)-1){
+            if ((1 << i) - 1 == val){
+                return true;
             }
             i ++;
         }
-        return flag;
+        return false;
 
     }
 }
