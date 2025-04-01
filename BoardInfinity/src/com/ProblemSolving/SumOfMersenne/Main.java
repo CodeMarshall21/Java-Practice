@@ -27,19 +27,31 @@ public class Main {
 
     }
     static boolean isMersenne(int val){
-        int[] mersenne = new int[10];
-
-        for (int i = 1; i < 10; i++) {
-            mersenne[i-1] = ((int)Math.pow(2,i)) - 1;
-        }
-
-        for(int num:mersenne){
-            if (val == num){
-                return true;
+//        int[] mersenne = new int[10];
+//
+//        for (int i = 1; i < 10; i++) {
+//            mersenne[i-1] = ((int)Math.pow(2,i)) - 1;
+//        }
+//
+//        for(int num:mersenne){
+//            if (val == num){
+//                return true;
+//            }
+//        }
+//        return false;
+        int i = 1;
+        boolean flag = false;
+        while(true){
+            if ((Math.pow(2,i)) - val == 1){
+                flag =  true;
+                break;
             }
+            if ((Math.pow(2,i)) > val){
+                break;
+            }
+            i ++;
         }
-        return false;
-
+        return flag;
 
     }
 }
