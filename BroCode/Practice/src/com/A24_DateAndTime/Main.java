@@ -1,6 +1,7 @@
 package com.A24_DateAndTime;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class Main {
@@ -13,6 +14,9 @@ public class Main {
 
         LocalTime time = LocalTime.now();
         System.out.println("LocalTime time = LocalTime.now(); -> time: "+time);
+
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println("LocalDateTime dateTime = LocalDateTime.now(); -> dateTime:"+dateTime);
 
     }
 }
