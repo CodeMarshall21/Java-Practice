@@ -3,6 +3,7 @@ package com.A24_DateAndTime;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Instant;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class Main {
 
         LocalDateTime dateTime = LocalDateTime.now();
         System.out.println("LocalDateTime dateTime = LocalDateTime.now(); -> dateTime:"+dateTime);
+
+
+        Instant instant = Instant.now();
+        System.out.println("Instant instant = Instant.now() -> instant: "+instant);
 
     }
 }
