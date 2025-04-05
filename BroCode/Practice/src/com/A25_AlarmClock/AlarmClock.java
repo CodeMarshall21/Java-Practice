@@ -22,12 +22,13 @@ public class AlarmClock implements Runnable{
                 int minute = LocalTime.now().getMinute();
                 int second = LocalTime.now().getSecond();
 
-                System.out.printf("%02d:%02d:%02d\n",hour,minute,second);
+                System.out.printf("\r%02d:%02d:%02d",hour,minute,second);
 
 
             }catch (InterruptedException e){
                 System.out.println("Thread Was Interrupted");
             }
         }
+        System.out.println("\n*ALARM NOISES ! *");
     }
 }
