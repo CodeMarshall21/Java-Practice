@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +23,13 @@ public class Main {
 
         Instant instant = Instant.now();
         System.out.println("Instant instant = Instant.now() -> instant: "+instant);
+
+        System.out.println("\nCUSTOM FORMAT");
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss");
+
+        String newDateTime = dateTime.format(formatter);
+        System.out.println(newDateTime);
 
     }
 }
