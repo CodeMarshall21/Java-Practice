@@ -11,7 +11,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime alarmTime = null;
-
+        String filepath = "Fortunate Son.wav";
 
         while(alarmTime == null){
             try{
@@ -25,7 +25,7 @@ public class Main {
             }
         }
 
-        AlarmClock alarmClock = new AlarmClock(alarmTime);
+        AlarmClock alarmClock = new AlarmClock(alarmTime,filepath);
         Thread alarmThread = new Thread(alarmClock);
         alarmThread.start();
 

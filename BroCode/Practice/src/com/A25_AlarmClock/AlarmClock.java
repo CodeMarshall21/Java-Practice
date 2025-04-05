@@ -5,10 +5,14 @@ import java.time.LocalTime;
 public class AlarmClock implements Runnable{
 
     public final LocalTime alarmTime;
+    public final String filepath;
 
-    AlarmClock(LocalTime alarmTime){
+    AlarmClock(LocalTime alarmTime, String filepath){
         this.alarmTime = alarmTime;
+        this.filepath = filepath;
     }
+
+
 
 
 
@@ -17,12 +21,10 @@ public class AlarmClock implements Runnable{
         while(LocalTime.now().isBefore(alarmTime)){
             try{
                 Thread.sleep(1000);
+                LocalTime now = LocalTime.now();
+                
 
-                int hour = LocalTime.now().getHour();
-                int minute = LocalTime.now().getMinute();
-                int second = LocalTime.now().getSecond();
-
-                System.out.printf("\r%02d:%02d:%02d",hour,minute,second);
+                System.out.printf("\r%02d:%02d:%02d",now.getHour(),now.getMinute(),now.getSecond());
 
 
             }catch (InterruptedException e){
