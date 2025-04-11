@@ -1,5 +1,7 @@
 package com.A11_SelectionSort;
 
+import java.util.Arrays;
+
 public class SelectionSort {
     public static void main(String[] args) {
         // selection sort = search through an array and keep track of the minimum value during
@@ -39,6 +41,7 @@ public class SelectionSort {
             int temp = array[i];
             array[i] = array[min];
             array[min] = temp;
+            System.out.println("Array after Iteration "+i+ " " + Arrays.toString(array));
         }
 
     }
