@@ -21,7 +21,7 @@ public class Main {
 
         walk(10);
         System.out.println(fibonacci(10));
-        System.out.println(factorial(10));
+        System.out.println(factorial(5));
         System.out.println(power(2,10));
     }
 
