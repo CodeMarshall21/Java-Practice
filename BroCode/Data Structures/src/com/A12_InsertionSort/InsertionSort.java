@@ -22,14 +22,20 @@ public class InsertionSort {
         }
 
         System.out.println("\nSorting...");
-
+        long start = System.nanoTime();
         insertionSort(array);
+        long stop = System.nanoTime();
+        long elapse = stop - start;
 
         System.out.print("Sorted Array: ");
         for (int val: array){
             System.out.print(val + " ");
         }
+        System.out.println("\nTime Taken: "+elapse+" ns");
+
     }
+
+
 
     public static void insertionSort(int[] array){
         for (int i = 1; i < array.length; i++) {

@@ -20,12 +20,17 @@ public class SelectionSort {
 
         System.out.println("\nSorting...");
 
+        long start = System.nanoTime();
         selectionSort(array);
+        long stop = System.nanoTime();
+        long elapse = stop - start;
 
         System.out.print("Sorted Array: ");
         for (int val: array){
             System.out.print(val + " ");
         }
+        System.out.println("\nTime Taken: "+elapse+" ns");
+
 
     }
 

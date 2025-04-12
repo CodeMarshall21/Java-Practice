@@ -16,7 +16,11 @@ public class BinarySearch {
         System.out.print("Target: ");
         target = in.nextInt();
 
+        long start = System.nanoTime();
         int index = binarySearch(array,target);
+        long stop = System.nanoTime();
+        long elapse = stop - start;
+        System.out.println("Time Taken: "+elapse+" ns");
 
         if(index == -1) {
             System.out.println(target + " not found");

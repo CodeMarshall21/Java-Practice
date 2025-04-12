@@ -27,8 +27,12 @@ public class InterpolationSearch {
         System.out.print("Value to search: ");
         int value  = in.nextInt();
 
-
+        long start = System.nanoTime();
         int index = interpolationSearch(array,value);
+        long stop = System.nanoTime();
+        long elapse = stop - start;
+        System.out.println("Time Taken: "+elapse+" ns");
+
 
         if (index != -1){
             System.out.println("Element found at : "+ index);

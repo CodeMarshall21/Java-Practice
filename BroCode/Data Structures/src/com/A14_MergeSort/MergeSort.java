@@ -15,13 +15,18 @@ public class MergeSort {
         }
 
         System.out.println("\nSorting...");
-
+        long start = System.nanoTime();
         mergeSort(arr);
+        long stop = System.nanoTime();
+        long elapse = stop - start;
 
         System.out.print("Sorted Array: ");
         for(int val :arr){
             System.out.print(val + " ");
         }
+
+        System.out.println("\nTime Taken: "+elapse+" ns");
+
     }
 
     public static void mergeSort(int[]array){
