@@ -61,24 +61,7 @@ Repeat the same process for right subarray.
 
 ---
 
-## 🔄 Dry Run
-```java
-int[] array = {5, 3, 8, 4, 2, 7, 1, 10};
-```
-1. Choose pivot = 10
-2. All values < 10 get pushed left
-3. Swap pivot (10) to position 7
 
-Now pivot is at correct position. Recurse on:
-- Left = {5, 3, 8, 4, 2, 7, 1}
-- Right = []
-
-Next pivot = 1 (last element of left)
-Rearrange elements < 1 to left of it => `{1, 3, 8, 4, 2, 7, 5}`
-
-Continue recursively...
-
----
 
 ## 🧪 Dry Run Example
 
