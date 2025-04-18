@@ -111,7 +111,8 @@ public class Main {
     }
 }
 ```
-
+---
+![img.png](img.png)
 ---
 
 ## 🧠 Intuition Behind Adjacency Matrix
