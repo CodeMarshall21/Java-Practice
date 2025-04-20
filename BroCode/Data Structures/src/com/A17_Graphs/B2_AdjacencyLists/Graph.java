@@ -25,7 +25,7 @@ public class Graph {
 //        adjList.get(src).add(dstNode);
     }
 
-    public boolean checkEge(int src, int dst){
+    public boolean checkEdge(int src, int dst){
         LinkedList<Node> currentList = adjList.get(src);
         Node dstNode = adjList.get(dst).get(0);
 
