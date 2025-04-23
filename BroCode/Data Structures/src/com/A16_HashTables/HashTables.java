@@ -38,8 +38,28 @@ public class HashTables {
         table.put(321, "Sandy");
         table.put(555, "Squidward");
         table.put(777, "Gary");
-
+        System.out.println("Hashtable<Integer, String> table = new Hashtable<>();");
         for(Integer key : table.keySet()) {
+            System.out.println(key.hashCode() % 10 + "\t" + key + "\t" + table.get(key));
+        }
+
+
+        Hashtable<String, String> table2 = new Hashtable<>();
+
+//        public Hashtable() {                  Constructs a new hashtable with the same mappings as the given Map.
+//           this(11, 0.75f);                   The hashtable is created with an initial capacity sufficient to hold
+//        }                                     the mappings in the given Map and a default load factor (0.75).
+
+
+
+
+        table2.put("100", "Spongebob");
+        table2.put("123", "Patrick");
+        table2.put("321", "Sandy");
+        table2.put("555", "Squidward");
+        table2.put("777", "Gary");
+        System.out.println("Hashtable<String, String> table2 = new Hashtable<>();");
+        for(String key : table2.keySet()) {
             System.out.println(key.hashCode() % 10 + "\t" + key + "\t" + table.get(key));
         }
 
