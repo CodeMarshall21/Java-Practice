@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/A1_MyFirstProgram/A1_MyFirstProgram.iml" filepath="$PROJECT_DIR$/A1_MyFirstProgram/A1_MyFirstProgram.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A2_Conditionals and Loops and Calculator Program/A2_Conditionals and Loops and Calculator Program.iml" filepath="$PROJECT_DIR$/A2_Conditionals and Loops and Calculator Program/A2_Conditionals and Loops and Calculator Program.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A3_Functions in Java/A3_Functions in Java.iml" filepath="$PROJECT_DIR$/A3_Functions in Java/A3_Functions in Java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A4_Introduction to Arrays and ArrayList in Java/A4_Introduction to Arrays and ArrayList in Java.iml" filepath="$PROJECT_DIR$/A4_Introduction to Arrays and ArrayList in Java/A4_Introduction to Arrays and ArrayList in Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kunal.iml" filepath="$PROJECT_DIR$/Kunal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practise/Practise.iml" filepath="$PROJECT_DIR$/Practise/Practise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Questions/Questions.iml" filepath="$PROJECT_DIR$/Questions/Questions.iml" />
     </modules>
   </component>
 </project>
