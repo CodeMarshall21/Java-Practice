@@ -1,17 +1,23 @@
 package com.Q2_BinarySearch.Leetcode374;
 
 public class Solution extends GuessGame {
-    public static void main(String[] args) {
-
+    public Solution(int guessVal) {
+        super(guessVal);
     }
 
-    public int guessNumber(int n) {
+    public static void main(String[] args) {
+        System.out.println(guessNumber(10));
+    }
+
+    static int guessNumber(int n) {
+        GuessGame guessGame = new GuessGame(6);
+
         int left = 1;
         int right = n;
 
         while (left <= right){
             int mid = left + (right - left) / 2;
-            int outcome = guess(mid);
+            int outcome = guessGame.guess(mid);
 
             if (outcome == 0){
                 return mid;
