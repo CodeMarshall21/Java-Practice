@@ -2,7 +2,11 @@ package com.A6_BinarySearch;
 
 public class OrderAgnosticBS {
     public static void main(String[] args) {
+        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
+        int target = 22;
 
+        int pos = orderAgnosticBS(arr,target);
+        System.out.printf("Element at: %d",pos);
     }
     static int orderAgnosticBS(int[] arr, int target){
         int start = 0;
