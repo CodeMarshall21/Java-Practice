@@ -3,7 +3,7 @@ package com.A6_BinarySearch;
 public class Main {
     public static void main(String[] args) {
         int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-        int target = -18;
+        int target = 22;
 
         int pos = binarySearch(arr,target);
         System.out.printf("Element at: %d",pos);
@@ -26,7 +26,7 @@ public class Main {
                 end = mid - 1;
             }
             else{
-                System.out.println("Element Found !!");
+                System.out.println("Element Found in "+count+" steps !!");
                 return mid;
             }
         }
