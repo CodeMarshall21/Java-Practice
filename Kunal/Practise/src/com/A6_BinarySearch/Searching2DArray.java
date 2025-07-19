@@ -1,8 +1,17 @@
 package com.A6_BinarySearch;
 
+import java.util.Arrays;
+
 public class Searching2DArray {
     public static void main(String[] args) {
+        int[][] arr = {
+                {10, 20, 30, 40},
+                {15, 25, 35, 45},
+                {28, 29, 37, 49},
+                {33, 34, 38, 50}
+        };
 
+        System.out.println(Arrays.toString(binarySearch(arr,29)));
     }
     static int[] binarySearch(int[][]matrix, int target){
 
@@ -15,10 +24,10 @@ public class Searching2DArray {
             }
 
             if (matrix[row][column] < target){
-                column--;
+                row++;
             }
             else{
-                row++;
+                column--;
             }
         }
 
