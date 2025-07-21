@@ -39,6 +39,14 @@ public class StrictlySortedMatrix {
             int rows = matrix.length;
             int cols = matrix[0].length;
 
+            if(cols == 0){
+                return new int[]{-1,-1};
+            }
+            if(rows == 1){
+                return BinarySearch(matrix, 0, 0, cols - 1, target);
+            }
+
+
             int midCol = cols / 2;
 
             int rStart = 0;
