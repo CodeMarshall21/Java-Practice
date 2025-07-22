@@ -19,6 +19,9 @@ public class StrictlySortedMatrix {
         System.out.println(Arrays.toString((search(matrix,19))));
     }
 
+
+    // search in the row provided between the cols provided
+
     static int[] BinarySearch (int[][] matrix, int row, int cStart, int cEnd, int target){
         while(cStart <= cEnd){
             int cMid = cStart + (cEnd - cStart) / 2;
@@ -52,7 +55,8 @@ public class StrictlySortedMatrix {
             int rStart = 0;
             int rEnd = rows - 1;
 
-            while(rStart < (rEnd - 1) ){
+        // run the loop till 2 rows are remaining
+            while(rStart < (rEnd - 1) ){    // while this is true it will have more than 2 rows
                 int midRow = rStart + (rEnd - rStart) / 2;
 
                 if (matrix[midRow][midCol] == target){
@@ -65,6 +69,8 @@ public class StrictlySortedMatrix {
                 }
             }
 
+            // now we have two rows
+            // check whether the target is in the col of 2 rows
             if(matrix[rStart][midCol] == target){
                 return new int[]{rStart,midCol};
             }
@@ -72,15 +78,22 @@ public class StrictlySortedMatrix {
                 return new int[]{rStart + 1,midCol};
             }
 
+            // search in 1st half
             if(target <= matrix[rStart][midCol - 1]){
                 return BinarySearch(matrix, rStart, 0, midCol - 1, target);
             }
+
+            // search in 2nd half
             if(target >= matrix[rStart][midCol + 1] && target <= matrix[rStart][cols - 1]){
                 return BinarySearch(matrix, rStart, midCol+1, cols - 1, target);
             }
+
+            // search in 3rd half
             if(target <= matrix[rStart + 1][midCol - 1]){
                 return BinarySearch(matrix, rStart + 1, 0, midCol - 1, target);
             }
+
+            // search in 4th half
             else{
                 return BinarySearch(matrix, rStart + 1, midCol + 1, cols - 1, target);
             }
