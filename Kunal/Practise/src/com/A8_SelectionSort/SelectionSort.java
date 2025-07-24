@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
         int[] arr = {-65,-89,0,-21,5,1};
-        selectionSort(arr);
+//        selectionSort(arr);
+        anotherLogic(arr);
         System.out.println(Arrays.toString(arr));
     }
     static void selectionSort(int[] arr){
@@ -32,6 +33,26 @@ public class SelectionSort {
             }
         }
         return max;
+    }
+
+    // {-65,-89,0,-21,5,1}
+
+    static void anotherLogic(int[] arr){
+        int lastIndex = arr.length - 1;
+
+        while(lastIndex > 0){
+            int maxVal = 0;
+            for (int i = 0; i <= lastIndex; i++) {
+                if (arr[i] > arr[maxVal]){
+                    maxVal = i;
+                }
+            }
+            int temp = arr[lastIndex];
+            arr[lastIndex] = arr[maxVal];
+            arr[maxVal] = temp;
+
+            lastIndex--;
+        }
     }
 
 }
