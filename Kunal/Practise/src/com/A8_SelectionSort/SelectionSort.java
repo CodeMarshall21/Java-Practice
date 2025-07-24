@@ -10,7 +10,9 @@ public class SelectionSort {
     }
     static void selectionSort(int[] arr){
         for (int i = 0; i < arr.length; i++) {
-            int lastIndex = arr.length - i - 1;
+
+            // find the max item in the remaining array and swap with correct index
+            int lastIndex = arr.length - i - 1; // to swap with n-i-1 th index
             int maxValIndex = maxVal(arr, 0, lastIndex);
             swapNums(arr, maxValIndex, lastIndex);
         }
