@@ -38,20 +38,21 @@ public class SelectionSort {
     // {-65,-89,0,-21,5,1}
 
     static void anotherLogic(int[] arr){
-        int lastIndex = arr.length - 1;
+        int firstIndex = 0;
+        int arrLen = arr.length;
 
-        while(lastIndex > 0){
-            int maxVal = 0;
-            for (int i = 0; i <= lastIndex; i++) {
-                if (arr[i] > arr[maxVal]){
-                    maxVal = i;
+        while(firstIndex < arrLen - 1){
+            int minVal = firstIndex;
+            for (int i = arrLen - 1; i >= firstIndex; i--) {
+                if (arr[i] < arr[minVal]){
+                    minVal = i;
                 }
             }
-            int temp = arr[lastIndex];
-            arr[lastIndex] = arr[maxVal];
-            arr[maxVal] = temp;
+            int temp = arr[firstIndex];
+            arr[firstIndex] = arr[minVal];
+            arr[minVal] = temp;
 
-            lastIndex--;
+            firstIndex++;
         }
     }
 
