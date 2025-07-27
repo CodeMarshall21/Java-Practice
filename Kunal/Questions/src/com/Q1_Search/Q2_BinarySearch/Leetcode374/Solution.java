@@ -1,4 +1,4 @@
-package com.Q2_BinarySearch.Leetcode374;
+package com.Q1_Search.Q2_BinarySearch.Leetcode374;
 
 public class Solution extends GuessGame {
     public Solution(int guessVal) {

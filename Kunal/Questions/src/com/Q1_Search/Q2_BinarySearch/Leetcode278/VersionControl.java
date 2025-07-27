@@ -1,4 +1,4 @@
-package com.Q2_BinarySearch.Leetcode278;
+package com.Q1_Search.Q2_BinarySearch.Leetcode278;
 
 import java.util.Random;
 

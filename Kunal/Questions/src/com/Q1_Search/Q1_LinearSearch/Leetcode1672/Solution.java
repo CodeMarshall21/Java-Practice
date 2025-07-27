@@ -1,4 +1,4 @@
-package com.Q1_LinearSearch.Leetcode1672;
+package com.Q1_Search.Q1_LinearSearch.Leetcode1672;
 
 public class Solution {
     public static void main(String[] args) {
