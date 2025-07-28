@@ -8,13 +8,18 @@ class Solution {
         int i = 0;
 
         while(i < nums.length){
-            if(nums[i] != i + 1){
-                int correctIndex = nums[i] - 1;
-                if(nums[i] != nums[correctIndex]){
-                    swapNum(nums,i, correctIndex);
+            if(nums[i] != i + 1){                   //   if correct number not in the correct place by default
+                int correctIndex = nums[i] - 1;     //   You're calculating where the current number actually belongs.
+                if(nums[i] != nums[correctIndex]){  //   Is the number at index i already at its correct position?
+                    swapNum(nums,i, correctIndex);  //   Swap the current number with the one at its correct spot.
                 }
                 else{
-                    return nums[i];
+                    return nums[i];                 // So you checked that the number currently in its position is not the right place using "if(nums[i] != i + 1)"
+                                                    // And you check whether number at index i is where it suppose to be using "if(nums[i] != nums[correctIndex])"
+                                                    // But the second condition you check tends to be false !!
+                                                    // How an element can both be at the wrong and right place at the same time ??
+                                                    // This proved that the element is DUPLICATE whose duplicate is at the both places at the same time
+                                                    // This needs to be returned !!
                 }
             }
             else{
