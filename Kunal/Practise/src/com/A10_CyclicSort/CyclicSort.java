@@ -11,9 +11,9 @@ public class CyclicSort {
     static void cyclicSort(int[] arr){
         int i = 0;
         while (i < arr.length){
-            int correctIndex = arr[i] - 1;
-            if (arr[i] != arr[correctIndex]){
-                swap(arr, i, correctIndex);
+            int correctIndex = arr[i] - 1;      //   You're calculating where the current number actually belongs.
+            if (arr[i] != arr[correctIndex]){   //   Is the number at index i already at its correct position?
+                swap(arr, i, correctIndex);     //   Swap the current number with the one at its correct spot.
             }
             else{
                 i ++;
