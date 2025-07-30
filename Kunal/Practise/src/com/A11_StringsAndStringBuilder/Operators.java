@@ -7,7 +7,7 @@ public class Operators {
         System.out.print("'a'+'b' -> ");
         System.out.println('a'+'b');
 
-        System.out.print("\"a\" + \"b\" -> ");
+        System.out.print("\"a\" + \"b\" -( creates new object )> ");
         System.out.println("a" + "b");
 
         System.out.print("'a' + 3 -> ");
