@@ -18,5 +18,7 @@ public class Main {
         System.out.print("first == second : ");
         System.out.println(first == second); // first and second referencing different objects
 
+        System.out.print("first.equals(second) : ");
+        System.out.println(first.equals(second));
     }
 }
