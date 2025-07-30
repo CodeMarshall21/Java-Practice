@@ -20,6 +20,9 @@ public class Operators {
         System.out.print("\"a\" + 1 -> ");  // integer will be converted to Integer that will call toString()
         System.out.println("a" + 1);        // this is same as after a few steps: "a" + "1"
 
+        System.out.print("\"a\" + 'b' -> ");
+        System.out.println("a" + 'b');
+
         System.out.print("\"Keshav\" + new ArrayList<>() -> ");
         System.out.println("Keshav" + new ArrayList<>());
 
