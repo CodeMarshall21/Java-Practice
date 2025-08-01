@@ -10,5 +10,10 @@ public class Methods {
         System.out.println(name.toUpperCase());
         System.out.print(name);
         System.out.println(" <-- this proves that new object is created");
+
+
+        System.out.print("  Keshav   ".strip());
+        System.out.println(" <-- This removes the blank space in the beginning and the end ");
+        System.out.println(Arrays.toString(name.split(" ")));
     }
 }
