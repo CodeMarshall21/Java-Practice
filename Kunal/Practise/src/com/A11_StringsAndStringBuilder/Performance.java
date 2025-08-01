@@ -14,5 +14,6 @@ public class Performance {
         // The above example of wastage of space and inefficient method,
         // were there is a new object created every time a character is concatenated.
         // So there are 25 other objects without any reference variable
+        // so we use "StringBuilder" in which no new objects are created for every change
     }
 }
