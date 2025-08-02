@@ -33,10 +33,10 @@ public class Main {
 
     static void pattern3 (int n){
         // number of lines tbe pattern = number of rows => NUMBER OF TIMES THE OUTER LOOP WILL RUN
-        for (int rows = 1; rows <= n ; rows++) {
+        for (int rows = 0; rows < n ; rows++) {
             // Identify for each row how many columns are there
             // TRY TO FIND THE FORMULA RELATING ROW AND COLUMN
-            for (int columns = 1; columns <= n-rows+1; columns++) {
+            for (int columns = 0; columns < n-rows; columns++) {
                 // What do you need to print => here, "*"
                 System.out.print("* ");
             }
