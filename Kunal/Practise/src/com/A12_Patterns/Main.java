@@ -35,6 +35,7 @@ public class Main {
         // number of lines tbe pattern = number of rows => NUMBER OF TIMES THE OUTER LOOP WILL RUN
         for (int rows = 0; rows < n ; rows++) {
             // Identify for each row how many columns are there
+            // TRY TO FIND THE FORMULA RELATING ROW AND COLUMN
             for (int columns = 1; columns <= n-rows; columns++) {
                 // What do you need to print => here, "*"
                 System.out.print("* ");
