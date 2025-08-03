@@ -89,7 +89,7 @@ public class Practise {
             for (int columns = 1; columns <= requiredColumns ; columns++) {
                 System.out.print("* ");
             }
-            
+
             System.out.println();
         }
     }
