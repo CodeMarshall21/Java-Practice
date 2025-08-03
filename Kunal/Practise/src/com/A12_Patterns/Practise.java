@@ -2,7 +2,7 @@ package com.A12_Patterns;
 
 public class Practise {
     public static void main(String[] args) {
-        pattern28(5);
+        pattern12(5);
     }
     static void pattern6(int n){
         for (int rows = 1; rows <= n; rows++) {
@@ -64,7 +64,7 @@ public class Practise {
     static void pattern12(int n){
         for (int rows = 1; rows <= 2 * n; rows++) {
             int requiredColumns = rows > n ? rows - n : n - (rows - 1);
-            int requiredSpaces = rows > n ? 2 * n - rows : rows - 1;
+            int requiredSpaces = n - requiredColumns;
 
             for (int spaces = 1; spaces <= requiredSpaces ; spaces++) {
                 System.out.print(" ");
