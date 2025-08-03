@@ -64,7 +64,7 @@ public class Practise {
     static void pattern12(int n){
         for (int rows = 1; rows <= 2 * n; rows++) {
             int requiredColumns = rows > n ? rows - n : n - (rows - 1);
-            int requiredSpaces = n - requiredColumns;
+            int requiredSpaces = n - requiredColumns;   // rows > n ? 2 * n - rows : rows - 1
 
             for (int spaces = 1; spaces <= requiredSpaces ; spaces++) {
                 System.out.print(" ");
