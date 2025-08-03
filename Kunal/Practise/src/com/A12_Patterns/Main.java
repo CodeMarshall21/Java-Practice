@@ -123,9 +123,12 @@ public class Main {
                 System.out.print("  ");
             }
 
+            // First half of the row : row number till 1
             for (int columns = rows; columns >= 1; columns--) {
                 System.out.printf("%d ",columns);
             }
+
+            // second half of the row : 2 till row number
             for (int columns = 2; columns <= rows ; columns++) {
                 System.out.printf("%d ",columns);
             }
