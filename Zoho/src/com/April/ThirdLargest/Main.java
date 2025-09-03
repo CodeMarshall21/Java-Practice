@@ -2,7 +2,7 @@ package com.April.ThirdLargest;
 
 public class Main {
     public static void main(String[] args) {
-        int [] arr ={100, 100, 90, 90, 80, 80, 70, 70};
+        int [] arr ={-1, -2, -3, -4, -5};
         System.out.println(thirdLargest(arr));
     }
     private static int thirdLargest(int[] arr) {
@@ -14,21 +14,27 @@ public class Main {
         int thirdLargest = Integer.MIN_VALUE;
 
         for (int num : arr) {
+            if(num == firstLargest || num == secondLargest || num == thirdLargest){
+                continue;
+            }
             if (num > firstLargest) {
                 thirdLargest = secondLargest;
                 secondLargest = firstLargest;
                 firstLargest = num;
             }
-            if (num < firstLargest && num > secondLargest) {
+            else if (num > secondLargest) {
                 thirdLargest = secondLargest;
                 secondLargest = num;
             }
-            if (num < secondLargest && num > thirdLargest){
+            else if (num > thirdLargest){
                 thirdLargest = num;
             }
         }
 
-        if(secondLargest == Integer.MIN_VALUE || thirdLargest == Integer.MIN_VALUE){
+        if(secondLargest == Integer.MIN_VALUE){
+            return firstLargest;
+        }
+        if( thirdLargest == Integer.MIN_VALUE){
             return -1;
         }
 
