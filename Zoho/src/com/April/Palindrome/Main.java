@@ -6,11 +6,15 @@ package com.April.Palindrome;
  */
 public class Main {
     public static void main(String[] args) {
-        String str = "mA#laYalaM@";
+        String str = "mA#laYal aM@";
         System.out.println(isPalindrome(str));
     }
 
     private static boolean isPalindrome(String str){
+        if(str.length() < 2){
+            return true;
+        }
+
         int leftPointer = 0;
         int rightPointer = str.length() - 1;
         str = str.toLowerCase();
