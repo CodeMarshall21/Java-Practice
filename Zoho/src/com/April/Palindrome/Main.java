@@ -6,7 +6,7 @@ package com.April.Palindrome;
  */
 public class Main {
     public static void main(String[] args) {
-        String str = "mAlaYalaM";
+        String str = "mA#laYalaM@";
         System.out.println(isPalindrome(str));
     }
 
@@ -16,11 +16,21 @@ public class Main {
         str = str.toLowerCase();
 
         while (leftPointer <= rightPointer){
+            if(!Character.isAlphabetic(str.charAt(leftPointer))){
+                leftPointer ++;
+            }
+
+            if(!Character.isAlphabetic(str.charAt(rightPointer))){
+                rightPointer --;
+            }
+
             if(str.charAt(rightPointer) != str.charAt(leftPointer)){
                 return false;
             }
-            leftPointer++;
-            rightPointer--;
+            else{
+                leftPointer++;
+                rightPointer--;
+            }
         }
 
         return true;
