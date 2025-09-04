@@ -9,6 +9,9 @@ package com.April.NonRepeatingChar;
         2. The comparison is case-sensitive. -> Input: "Codeitcodeit" Output: 'C'
         3. Special characters and symbols are also counted. -> Input: "codeit@*codeit@" Output: '*'
 
+        Constraints :-
+            Time complexity: O(n)
+            Space complexity: O(1)
 */
 
 public class Main {
