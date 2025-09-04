@@ -12,20 +12,47 @@ Sample output: 82 (even though 86, 87 are missing, the goal is to find FIRST MIS
 */
 public class MissingNumberDynamicRange {
     public static void main(String[] args) {
-        int[] arr = {203, 200, 202};
-        System.out.println(missingNumber(arr));
+//        int[] arr = {203, 200, 202};
+
+        int[][] testCases = {
+                {81, 84, 83, 89, 85, 88},   // expected 82
+                {200, 202},                 // expected 201
+                {5, 6, 7, 9, 10},           // expected 8
+                {1},                        // expected 2
+                {},                         // expected -1
+                {100, 101, 102},            // expected 103
+                {2, 3, 4, 5, 7},            // expected 6
+                {10, 11, 13, 12, 15},       // expected 14
+                {50, 51, 52, 54},           // expected 53
+                {7, 9, 8, 10, 12},          // expected 11
+                {42},                       // expected 43
+                {-1, 0, 1, 3},              // expected 2
+                {-5, -4, -3, -1},           // expected -2
+                {99, 100, 102},             // expected 101
+                {500, 501, 502, 503},       // expected 504
+        };
+
+        for(int[] arr: testCases){
+            System.out.println("Input: "+ Arrays.toString(arr));
+            System.out.println("Output: "+missingNumber(arr));
+            System.out.println("------------------------------");
+        }
+//        System.out.println(missingNumber(arr));
     }
 
     private static int missingNumber(int[] arr){
-        if(arr.length == 1){
-            return arr[0] + 1;
-        }
-        if(arr.length < 1){
+
+        if(arr.length == 0){
             return -1;
         }
 
+        if(arr.length == 1){
+            return arr[0] + 1;
+        }
+
+
         sort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Sorted array: "+Arrays.toString(arr));
         int index = 1;
 
         while(index < arr.length){
