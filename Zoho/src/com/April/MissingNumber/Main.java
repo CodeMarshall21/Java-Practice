@@ -1,4 +1,7 @@
 package com.April.MissingNumber;
+
+import java.util.Arrays;
+
 /*
 Find the Missing Number from 0 to n distinct numbers
 
@@ -10,8 +13,23 @@ logic:-
 */
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {2, 0, 3, 4, 6, 1};
-        System.out.println(missingNumber(arr));
+        int[][] testCases = {
+                {0, 1, 3},                  // n=3, missing 2
+                {3, 0, 1},                  // n=3, missing 2 (unsorted)
+                {0, 1, 2, 4},               // n=4, missing 3
+                {1},                        // n=1, missing 0
+                {0},                        // n=1, missing 1
+                {0, 2, 3, 4, 5},            // n=5, missing 1
+                {1, 2, 3, 4, 5},            // n=5, missing 0
+                {0, 1, 2, 3, 4},            // n=5, missing 5
+                {5, 4, 3, 2, 0},            // n=5, missing 1 (unsorted)
+                {9, 6, 4, 2, 3, 5, 7, 0, 1} // n=9, missing 8
+        };
+        for(int[] arr: testCases){
+            System.out.println("Input: " + Arrays.toString(arr));
+            System.out.println("Output: " + missingNumber(arr));
+            System.out.println("----------------------------------------");
+        }
     }
 
     private static int missingNumber(int[] arr){
