@@ -14,7 +14,15 @@ public class MissingNumberDynamicRange {
 
     private static int missingNumber(int[] arr){
         int missingNumber = 0;
-        
+
         return missingNumber;
+    }
+
+    private static void sort(int[] arr){
+
+    }
+
+    private static void swap(int[] arr, int index1, int index2){
+        
     }
 }
