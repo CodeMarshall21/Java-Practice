@@ -7,7 +7,7 @@ public class SecondMethod {
     }
 
     private static int missingNumber(int[] arr){
-        int missingNumber = 0;
+        int missingNumber;
         int originalSum = 0;
         int arrSum = 0;
 
