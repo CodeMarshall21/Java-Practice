@@ -1,5 +1,10 @@
 package com.March22nd.Patterns;
 
+/*
+Explanation: https://youtu.be/-VSpmfyyHP0?si=8bp9bsXlX-NMQn60
+*/
+
+
 public class Main {
     public static void main(String[] args) {
         pattern(5);
