@@ -19,7 +19,10 @@ import java.util.PriorityQueue;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {}
+        int[] arr = {7, 10, 4, 3, 20, 15};
+        int k = 3;
+
+        System.out.println(kthSmallestElementOptimized(arr, k));
 
     }
 
