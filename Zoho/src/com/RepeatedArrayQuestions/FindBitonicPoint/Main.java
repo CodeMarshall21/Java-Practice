@@ -30,12 +30,12 @@ public class Main {
 
         for(int[] arr: testCases){
             System.out.println("Input: " + Arrays.toString(arr));
-            System.out.println("Output: " + BitonicPoint(arr));
+            System.out.println("Output: " + bitonicPoint(arr));
             System.out.println("---------------------------------------");
         }
     }
 
-    private static int BitonicPoint(int [] arr){
+    private static int bitonicPoint(int [] arr){
         int bitonicPoint = 0;
 
         // Strategy: Binary Search
@@ -51,7 +51,7 @@ public class Main {
 
             int mid = left + (right - left)/2 ;
 
-            if(mid == 0 || mid == arr.length){
+            if(mid == 0 || mid == arr.length - 1){
                 return arr[mid];
             }
             else{
