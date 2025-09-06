@@ -27,7 +27,7 @@ public class Main {
         };
         for(int[] arr: testCases){
             System.out.println("Input: " + Arrays.toString(arr));
-            System.out.println("Output: " + equilibriumIndex(arr));
+            System.out.println("Output: " + equilibriumIndexOptimized(arr));
             System.out.println("-----------------------------------------");
 
         }
@@ -48,6 +48,28 @@ public class Main {
             }else{
                 sum -= arr[index];
             }
+        }
+        return -1;
+    }
+
+    private static int equilibriumIndexOptimized(int[] arr){
+        if(arr.length == 0){
+            return -1;
+        }
+
+        int totalSum = 0;
+
+        for(int num: arr){
+            totalSum += num;
+        }
+
+        int leftSum = 0;
+        for (int index = 0; index < arr.length; index++) {
+            int rightSum = totalSum - leftSum - arr[index]; // <------  say, the sum on the left and
+            if(rightSum == leftSum){                        //          right of the current index you
+                return index;                               //          are standing (excluding the current index)
+            }                                               //          are the same.
+            leftSum += arr[index];
         }
         return -1;
     }
