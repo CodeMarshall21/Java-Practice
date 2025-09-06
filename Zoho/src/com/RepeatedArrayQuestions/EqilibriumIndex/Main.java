@@ -1,5 +1,7 @@
 package com.RepeatedArrayQuestions.EqilibriumIndex;
 
+import java.util.Arrays;
+
 /*
         Equilibrium Index
         Description:
@@ -11,6 +13,42 @@ package com.RepeatedArrayQuestions.EqilibriumIndex;
 */
 public class Main {
     public static void main(String[] args) {
+        int[][] testCases = {
+                {3, 4, 9, 6, 1},          // expected 2
+                {1, 2, 3},                // expected -1
+                {2, 3, -1, 2, 3},         // expected 2
+                {0, 0, 0, 0},             // expected 0 (any index works, usually first)
+                {5},                      // expected 0
+                {-7, 1, 5, 2, -4, 3, 0},  // expected 3
+                {10, -10, 5, 2},          // expected -1
+                {1, 2, 3, 3},             // expected 2
+                {1, 2, 3, 4, 6},          // expected 3
+                {}                        // expected -1
+        };
+        for(int[] arr: testCases){
+            System.out.println("Input: " + Arrays.toString(arr));
+            System.out.println("Output: " + equilibriumIndex(arr));
+            System.out.println("-----------------------------------------");
 
+        }
+    }
+    private static int equilibriumIndex(int[] arr){
+        if(arr.length == 0){
+            return -1;
+        }
+        int sum = 0;
+        for(int num: arr){
+            sum += num;
+        }
+        int currSum = 0;
+        for (int index = 0; index < arr.length; index++) {
+            currSum += arr[index];
+            if(currSum == sum){
+                return index;
+            }else{
+                sum -= arr[index];
+            }
+        }
+        return -1;
     }
 }
