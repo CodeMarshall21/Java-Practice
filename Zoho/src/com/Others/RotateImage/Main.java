@@ -4,13 +4,19 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        int degree = 360;
         int[][] matrix = {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        rotateImage(matrix);
-        System.out.println(Arrays.deepToString(matrix));
+
+        for (int i = 0; i < (degree/90) ; i++) {
+            rotateImage(matrix);
+        }
+        for(int[] rows: matrix){
+            System.out.println(Arrays.toString((rows)));
+        }
 
     }
     private static void rotateImage(int[][] matrix){
