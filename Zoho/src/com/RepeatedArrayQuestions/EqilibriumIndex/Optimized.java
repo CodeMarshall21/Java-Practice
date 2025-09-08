@@ -2,16 +2,7 @@ package com.RepeatedArrayQuestions.EqilibriumIndex;
 
 import java.util.Arrays;
 
-/*
-        Equilibrium Index
-        Description:
-        An Equilibrium Index in an array is an index i such that the sum
-        of elements before i is equal to the sum of elements after i.
-
-        arr1 = [3, 4, 9, 6, 1];
-        output = 2
-*/
-public class Main {
+public class Optimized {
     public static void main(String[] args) {
         int[][] testCases = {
                 {3, 4, 9, 6, 1},          // expected 2
@@ -32,25 +23,26 @@ public class Main {
 
         }
     }
-    private static int equilibriumIndex(int[] arr){
+
+    private static int equilibriumIndexOptimized(int[] arr){
         if(arr.length == 0){
             return -1;
         }
-        int sum = 0;
+
+        int totalSum = 0;
+
         for(int num: arr){
-            sum += num;
+            totalSum += num;
         }
-        int currSum = 0;
+
+        int leftSum = 0;
         for (int index = 0; index < arr.length; index++) {
-            currSum += arr[index];
-            if(currSum == sum){
-                return index;
-            }else{
-                sum -= arr[index];
-            }
+            int rightSum = totalSum - leftSum - arr[index]; // <------  say, the sum on the left and
+            if(rightSum == leftSum){                        //          right of the current index you
+                return index;                               //          are standing (excluding the current index)
+            }                                               //          are the same.
+            leftSum += arr[index];
         }
         return -1;
     }
-
-
 }
