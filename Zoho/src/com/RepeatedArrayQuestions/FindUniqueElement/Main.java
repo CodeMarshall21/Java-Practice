@@ -27,6 +27,7 @@ public class Main {
                 {50, 60, 70, 60, 50},       // expected 70 (unique in middle)
                 {200, 300, 200},            // expected 300 (tiny case, unique last)
                 {5, 6, 5, 7, 7},            // expected 6 (unique second element)
+                {},
         };
 
         for(int[]arr : testCases){
@@ -36,9 +37,14 @@ public class Main {
         }
     }
     private static int uniqueElement(int[] arr){
-        int xorSum = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            xorSum = xorSum^arr[i];
+
+        if(arr.length == 0){
+            return -1;
+        }
+
+        int xorSum = 0;
+        for (int j : arr) {
+            xorSum ^= j;
         }
         return xorSum;
     }
