@@ -10,11 +10,36 @@ package com.RepeatedArrayQuestions.FindUniqueElement;
         Output = 5
 */
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
+//        int[] arr = {4, 2, 5, 2, 4}
 
+        int[][] testCases = {
+                {4, 2, 5, 2, 4},            // expected 5
+                {1, 1, 2},                  // expected 2 (minimum size valid array)
+                {7, 3, 5, 3, 7},            // expected 5 (unique in middle)
+                {10, 20, 10},               // expected 20 (unique in middle)
+                {-1, -2, -1},               // expected -2 (works with negatives)
+                {0, 1, 0},                  // expected 1 (works with zero)
+                {99, 100, 100, 101, 101},   // expected 99 (unique at start)
+                {50, 60, 70, 60, 50},       // expected 70 (unique in middle)
+                {200, 300, 200},            // expected 300 (tiny case, unique last)
+                {5, 6, 5, 7, 7},            // expected 6 (unique second element)
+        };
+
+        for(int[]arr : testCases){
+            System.out.println("Input: "+ Arrays.toString(arr));
+            System.out.println("Output: "+uniqueElement(arr));
+            System.out.println("---------------------------------");
+        }
     }
     private static int uniqueElement(int[] arr){
-        
+        int xorSum = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            xorSum = xorSum^arr[i];
+        }
+        return xorSum;
     }
 }
