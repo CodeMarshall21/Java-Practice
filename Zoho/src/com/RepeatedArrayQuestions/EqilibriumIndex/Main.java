@@ -27,7 +27,7 @@ public class Main {
         };
         for(int[] arr: testCases){
             System.out.println("Input: " + Arrays.toString(arr));
-            System.out.println("Output: " + equilibriumIndexOptimized(arr));
+            System.out.println("Output: " + equilibriumIndex(arr));
             System.out.println("-----------------------------------------");
 
         }
