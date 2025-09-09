@@ -15,12 +15,10 @@ package com.Others.StringRotation;
 
 public class Main {
     public static void main(String[] args) {
-
+        String str1 = "abcd" , str2 = "bca";
+        System.out.println(isRotated(str1,str2));
     }
     private static boolean isRotated(String str1, String str2){
-        boolean isRotated = false;
-
-
-        return isRotated;
+        return str2.length() == str1.length() && (str1 + str2).contains(str2);
     }
 }
