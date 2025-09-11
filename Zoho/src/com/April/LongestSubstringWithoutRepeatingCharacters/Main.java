@@ -49,7 +49,7 @@ public class Main {
             if(lastSeen[str.charAt(i)] > start){
                 start = lastSeen[str.charAt(i)];
             }
-            lastSeen[str.charAt(i)] = i + 1;
+            lastSeen[str.charAt(i)] = i + 1;    // to keep record of "at which position did i see that character ?"
             maxLen = Math.max(maxLen, i+1-start);
         }
 
